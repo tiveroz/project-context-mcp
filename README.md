@@ -21,6 +21,7 @@ Direct development invocation with an existing SDK environment:
 
 ```sh
 python server.py --registry examples/registry.json
+python -m pip install -r requirements-dev.txt
 python -m unittest discover -s tests -v
 ```
 
