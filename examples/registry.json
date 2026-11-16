@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "mode": "synthetic-demo",
+  "source_observation": {"state": "demo-only", "last_checked": null},
+  "projects": {
+    "research": {"title": "Example Research", "summary": "Synthetic source project", "published_release": "research-v1"},
+    "documentation": {"title": "Example Documentation", "summary": "Synthetic consumer project", "published_release": null},
+    "product": {"title": "Example Product", "summary": "Synthetic consumer project", "published_release": null}
+  },
+  "dependencies": [
+    {"from": "research", "to": "documentation", "status": "active"},
+    {"from": "research", "to": "product", "status": "proposed"},
+    {"from": "documentation", "to": "research", "status": "proposed"}
+  ],
+  "releases": {"research-v1": {"project": "research", "state": "published", "summary": "Synthetic example, no real approval implied"}},
+  "acknowledgements": []
+}
